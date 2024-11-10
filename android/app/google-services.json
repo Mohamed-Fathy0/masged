@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "749568399240",
+    "project_id": "masaged-7004f",
+    "storage_bucket": "masaged-7004f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749568399240:android:7fb7c4ca9b5baadad58c3d",
+        "android_client_info": {
+          "package_name": "com.masaged.masaged"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749568399240-k0tluissbhk4poltoj0590kirb4dnpua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masaged.masaged",
+            "certificate_hash": "03f62783fc36aaa9c3a887b8f572c08cfd3e9939"
+          }
+        },
+        {
+          "client_id": "749568399240-0kfvnonlggsfhuv7qcg5tjcva85df3t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfxFWRhCWlrFrCypMG0NEynXSegscpmu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749568399240-0kfvnonlggsfhuv7qcg5tjcva85df3t9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "749568399240-gkjtbtlpi9s70cbqa7cfu9cln0okc3mb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.masaged.masaged"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
