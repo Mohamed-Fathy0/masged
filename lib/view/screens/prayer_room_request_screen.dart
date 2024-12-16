@@ -36,8 +36,28 @@ class _PrayerRoomRequestScreenState extends State<PrayerRoomRequestScreen> {
     'آخر'
   ];
 
+  final TextEditingController cityController = TextEditingController();
+  final TextEditingController neighborhoodController = TextEditingController();
+
+  String? nearestLandmark;
+  final List<String> landmarks = [
+    'حديقة عامة',
+    'مركز تجاري (سوق)',
+    'مجمّع سكني',
+    'أخرى',
+  ];
+
+  String? expectedPrayersCount;
+  final List<String> prayersCountOptions = [
+    '10 أو أقل',
+    '20',
+    '30 فأكثر',
+  ];
+
   @override
   void dispose() {
+    cityController.dispose();
+    neighborhoodController.dispose();
     applicantNameController.dispose();
     contactNumberController.dispose();
     addressController.dispose();
@@ -103,6 +123,10 @@ class _PrayerRoomRequestScreenState extends State<PrayerRoomRequestScreen> {
             'applicantRole': applicantRole,
             'contactNumber': contactNumberController.text,
             'address': addressController.text,
+            'city': cityController.text,
+            'neighborhood': neighborhoodController.text,
+            'nearestLandmark': nearestLandmark,
+            'expectedPrayersCount': expectedPrayersCount,
             'mosqueAddress': _mosqueAddress!,
             'uid': user?.uid ?? 'unknown',
             'startDate':
@@ -176,6 +200,27 @@ class _PrayerRoomRequestScreenState extends State<PrayerRoomRequestScreen> {
                   inputType: TextInputType.phone,
                   validator: (value) =>
                       _requiredFieldValidator(value, 'رقم التواصل'),
+                ),
+                _buildTextField(
+                  label: 'المدينة',
+                  controller: cityController,
+                  validator: (value) =>
+                      _requiredFieldValidator(value, 'المدينة'),
+                ),
+                _buildTextField(
+                  label: 'الحي',
+                  controller: neighborhoodController,
+                  validator: (value) => _requiredFieldValidator(value, 'الحي'),
+                ),
+                _buildDropdownField(
+                  'أقرب معلم للمكان',
+                  landmarks,
+                  (value) => setState(() => nearestLandmark = value),
+                ),
+                _buildDropdownField(
+                  'عدد المصلين المتوقع لكل فرض',
+                  prayersCountOptions,
+                  (value) => setState(() => expectedPrayersCount = value),
                 ),
                 _buildTextField(
                   label: 'العنوان بالتفصيل',

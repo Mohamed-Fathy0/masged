@@ -37,7 +37,7 @@ class RequestTypeScreen extends StatelessWidget {
                     const LinearGradient(
                       colors: [
                         Color(0xFF004B6F), // أزرق غامق
-                        Color(0xFF003B54), // أزرق داكن أكثر
+                        Color(0xFF004B6F), // أزرق داكن أكثر
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
@@ -50,7 +50,7 @@ class RequestTypeScreen extends StatelessWidget {
                     Icons.auto_fix_high,
                     const LinearGradient(
                       colors: [
-                        Color(0xFF8D6E63), // بيج داكن
+                        Color(0xFF5D4037), // بيج داكن
                         Color(0xFF5D4037), // بني غامق مع لمسة بيج
                       ],
                       begin: Alignment.topLeft,
@@ -65,7 +65,7 @@ class RequestTypeScreen extends StatelessWidget {
                     const LinearGradient(
                       colors: [
                         Color(0xFF004B6F), // أزرق غامق
-                        Color(0xFF37474F), // أزرق رصاصي غامق
+                        Color(0xFF004B6F), // أزرق رصاصي غامق
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
@@ -79,7 +79,7 @@ class RequestTypeScreen extends StatelessWidget {
                     const LinearGradient(
                       colors: [
                         Color(0xFF607D8B), // أزرق رمادي متوسط
-                        Color(0xFF004B6F), // أزرق غامق
+                        Color(0xFF607D8B), // أزرق غامق
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,

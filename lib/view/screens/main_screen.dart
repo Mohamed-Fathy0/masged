@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:masged/view/screens/auth_screens/login_screen.dart';
 import 'package:masged/view/screens/donate_fast_screen.dart';
 import 'package:masged/view/screens/my_requests.dart';
+import 'package:masged/view/screens/offer_service_screen.dart';
 import 'package:masged/view/screens/request_type_screen.dart';
 import 'package:masged/view/screens/services_screen.dart';
 import 'package:masged/view/widgets/custom_button.dart';
@@ -47,8 +48,23 @@ class MainScreen extends StatelessWidget {
                     const RequestTypeScreen(),
                     gradient: const LinearGradient(
                       colors: [
-                        Color(0xFF2F6CAD), // أزرق متوسطة الغمق
+                        Color(0xFF1C3D73), // أزرق متوسطة الغمق
                         Color(0xFF1C3D73), // أزرق غامق
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                  buildMenuButton(
+                    context,
+                    'قدم خدماتك',
+                    Icons.room_service,
+                    Colors.blue, // أزرق فاتح وغامق متوازن
+                    const OfferServiceScreen(),
+                    gradient: const LinearGradient(
+                      colors: [
+                        Color(0xFF37474F), // أزرق غامق
+                        Color(0xFF37474F), // أزرق غامق
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
@@ -60,7 +76,7 @@ class MainScreen extends StatelessWidget {
                     Icons.info,
                     const LinearGradient(
                       colors: [
-                        Color(0xFFC19A6B), // بيج غامق قليلاً (لون متزن)
+                        Color(0xFF8B6A4F), // بيج غامق قليلاً (لون متزن)
                         Color(0xFF8B6A4F), // بيج غامق
                       ],
                       begin: Alignment.topLeft,
@@ -76,7 +92,7 @@ class MainScreen extends StatelessWidget {
                     const DonateFastScreen(),
                     gradient: const LinearGradient(
                       colors: [
-                        Color(0xFF90A4AE), // رصاصي متوسط الغمق
+                        Color(0xFF455A64), // رصاصي متوسط الغمق
                         Color(0xFF455A64), // رصاصي غامق
                       ],
                       begin: Alignment.topLeft,
@@ -91,7 +107,7 @@ class MainScreen extends StatelessWidget {
                     const ServicesPage(),
                     gradient: const LinearGradient(
                       colors: [
-                        Color(0xFF546E7A), // أزرق رمادي غامق قليلاً
+                        Color(0xFF37474F), // أزرق رمادي غامق قليلاً
                         Color(0xFF37474F), // أزرق رمادي غامق
                       ],
                       begin: Alignment.topLeft,

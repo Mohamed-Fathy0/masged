@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
           primaryColor: const Color(0xFF004B6F), // الأزرق الداكن
           scaffoldBackgroundColor: const Color(0xFFF5F1E5), // البيج الفاتح
           appBarTheme: const AppBarTheme(
+            titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
             color: Color(0xFF004B6F), // لون AppBar بنفس لون الأزرق الداكن
             iconTheme:
                 IconThemeData(color: Colors.white), // الأيقونات في AppBar
@@ -55,18 +56,18 @@ class MyApp extends StatelessWidget {
             ),
           ),
           textTheme: const TextTheme(
-            bodyLarge: TextStyle(fontFamily: 'Uthmanic'),
-            bodyMedium: TextStyle(fontFamily: 'Uthmanic'),
-            displayLarge: TextStyle(fontFamily: 'Uthmanic'),
-            displayMedium: TextStyle(fontFamily: 'Uthmanic'),
-            displaySmall: TextStyle(fontFamily: 'Uthmanic'),
-            headlineMedium: TextStyle(fontFamily: 'Uthmanic'),
-            headlineSmall: TextStyle(fontFamily: 'Uthmanic'),
-            titleLarge: TextStyle(fontFamily: 'Uthmanic'),
-            titleMedium: TextStyle(fontFamily: 'Uthmanic'),
-            titleSmall: TextStyle(fontFamily: 'Uthmanic'),
-            bodySmall: TextStyle(fontFamily: 'Uthmanic'),
-            labelLarge: TextStyle(fontFamily: 'Uthmanic'),
+            bodyLarge: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            bodyMedium: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            displayLarge: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            displayMedium: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            displaySmall: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            headlineMedium: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            headlineSmall: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            titleLarge: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            titleMedium: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            titleSmall: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            bodySmall: TextStyle(fontFamily: 'TheYearofTheCamel'),
+            labelLarge: TextStyle(fontFamily: 'TheYearofTheCamel'),
           ),
         ),
         home: const MainScreen(), //SelectLocationScreen
